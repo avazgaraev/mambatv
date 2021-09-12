@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "community";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<div style="height:100vh; background-image:url(https://wallpaperaccess.com/full/5054324.png);background-position:center">
+    <div class="container poptextbg">
+        <div class="navbarimg">
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark p-3 secimnavbar">
+            <a class="navbar-brand iconbrend" href="indexmain">MM</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="popmain">Pop</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Hip-Hop
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item dropdownad" href="oldsch">Old School</a>
+                        <a class="dropdown-item dropdownad" href="#">Trap</a>
+                        <a class="dropdown-item dropdownad" href="#">Drill</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item dropdownad" href="community">Place your track</a>
+                        <a class="dropdown-item dropdownad" href="cooperation">Cooperation</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sale">Sale Hotlist</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 style="font-family:Georgia, serif;font-weight:bold;text-align:center;margin-top:30px;color:white;margin-bottom:30px;">Place Your Track</h1>
+    </div>
+</div>
+<div class="combg">
+    <form class="dere" action="~/home/community" method="post">
+        <label>
+            <p class="label-txt">ENTER YOUR EMAIL*</p>
+        </label>
+        <input type="email" required name="email" class="input derein">
+        <div class="line-box">
+            <div class="line"></div>
+        </div>
+        <label>
+            <p class="label-txt">ENTER YOUR NAME*</p>
+        </label>
+        <input name="ad" required class="input derein">
+        <div class="line-box">
+            <div class="line"></div>
+        </div>
+        <label>
+            <p class="label-txt">ENTER YOUR TRACK NAME*</p>
+        </label>
+        <input name="trackname" required class="input derein">
+        <div class="line-box">
+            <div class="line"></div>
+        </div>
+        <label>
+            <p class="label-txt">ENTER YOUR TRACK*</p>
+        </label>
+
+        <input type="file" required id="myfile" name="myfile">
+        <label>
+            <p class="label-txt">ENTER MESSAGE( IF YOU WANT )</p>
+        </label>
+        <input name="message" style="height:150px;" class="input derein">
+        <div class="line-box">
+            <div class="line"></div>
+        </div>
+        <button class="submit mt-5" type="submit">submit</button>
+
+    </form>
+</div>
+
